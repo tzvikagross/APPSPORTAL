@@ -39,7 +39,7 @@ export const getCategoryConfig = (category: string) => {
       return { color: 'text-slate-600', bg: 'bg-slate-50', hoverBg: 'group-hover:bg-slate-600', badge: 'bg-slate-100 text-slate-700' };
     case 'admin':
       return { color: 'text-rose-600', bg: 'bg-rose-50', hoverBg: 'group-hover:bg-rose-600', badge: 'bg-rose-100 text-rose-700' };
-    case 'infrastructure':
+    case 'links':
       return { color: 'text-violet-600', bg: 'bg-violet-50', hoverBg: 'group-hover:bg-violet-600', badge: 'bg-violet-100 text-violet-700' };
     case 'development':
       return { color: 'text-blue-600', bg: 'bg-blue-50', hoverBg: 'group-hover:bg-blue-600', badge: 'bg-blue-100 text-blue-700' };

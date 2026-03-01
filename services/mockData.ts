@@ -91,7 +91,7 @@ export const mockPortalData: PortalFolder = {
               id: 'fund.distribute',
               name: 'Document Generator',
               description: 'BDO Document Distribution System',
-              link: 'https://bdo-funds.co.il/funds',
+              link: '/assets/master gen.xlsm',
               category: 'Funds'
             }
           ]
@@ -99,121 +99,35 @@ export const mockPortalData: PortalFolder = {
       ],
       applications: [
         {
-          id: 'app4',
-          name: 'HR Handbook',
-          description: 'Official company policies and guidelines document.',
-          link: '#',
-          category: 'Documentation'
+          id: 'fund.BDOsystem',
+              name: 'BDO Fund System',
+              description: 'BDO Fund System',
+              link: 'https://bdo-funds.co.il/funds',
+              category: 'Funds'
         }
       ]
     },
     {
-      id: 'f2',
-      name: 'Engineering',
-      subfolders: [
-        {
-          id: 'f2-1',
-          name: 'Cloud Services',
-          subfolders: [
+      id: 'root.links',
+      name: 'Useful Links',
+      subfolders: [],
+      applications: [
             {
-              id: 'f2-1-1',
-              name: 'AWS Dashboards',
-              subfolders: [],
-              applications: [
-                {
-                  id: 'app5',
-                  name: 'CloudWatch Metrics',
-                  description: 'Real-time performance monitoring for microservices.',
-                  link: '#',
-                  category: 'Monitoring'
-                }
-              ]
-            }
-          ],
-          applications: [
-            {
-              id: 'app6',
-              name: 'GCP Console',
-              description: 'Access to Google Cloud Platform resources.',
-              link: 'https://console.cloud.google.com',
-              category: 'Infrastructure'
-            }
-          ]
-        },
-        {
-          id: 'f2-2',
-          name: 'Developer Tools',
-          subfolders: [],
-          applications: [
-            {
-              id: 'app7',
-              name: 'GitHub Enterprise',
-              description: 'Version control and collaboration platform.',
-              link: 'https://github.com',
-              category: 'Development'
+              id: 'links.roc',
+              name: 'רשם החברות',
+              description: 'חיפוש חברה לפי שם או חפ',
+              link: 'https://ica.justice.gov.il/GenericCorporarionInfo/SearchCorporation?unit=8',
+              category: 'Links'
             },
             {
-              id: 'app8',
-              name: 'Linear',
-              description: 'The issue tracker for modern software teams.',
-              link: 'https://linear.app',
-              category: 'Management'
+              id: 'links.wht',
+              name: 'ניכוי מס במקור',
+              description: ' אישור ניכוי במקור לחברה',
+              link: 'https://taxinfo.taxes.gov.il/gmishurim/firstPage.aspx',
+              category: 'Links'
             }
           ]
-        }
-      ],
-      applications: []
-    },
-    {
-      id: 'f3',
-      name: 'Marketing',
-      subfolders: [],
-      applications: [
-        {
-          id: 'app9',
-          name: 'Canva',
-          description: 'Design tool for social media and marketing assets.',
-          link: 'https://canva.com',
-          category: 'Creative'
-        },
-        {
-          id: 'app10',
-          name: 'Buffer',
-          description: 'Schedule and manage social media posts.',
-          link: 'https://buffer.com',
-          category: 'Social'
-        }
-      ]
-    },
-    {
-      id: 'f4',
-      name: 'Internal Tools',
-      subfolders: [],
-      applications: [
-        {
-          id: 'app11',
-          name: 'Internal Wiki',
-          description: 'Central knowledge base for team-specific documentation.',
-          link: '#',
-          category: 'Knowledge'
-        }
-      ]
     }
-  ],
-  applications: [
-    {
-      id: 'app12',
-      name: 'Email Service',
-      description: 'Corporate email and calendaring system.',
-      link: 'https://outlook.com',
-      category: 'Communication'
-    },
-    {
-      id: 'app13',
-      name: 'Slack',
-      description: 'Real-time messaging and channel-based collaboration.',
-      link: 'https://slack.com',
-      category: 'Communication'
-    }
+    
   ]
 };
