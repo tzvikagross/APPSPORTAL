@@ -8,6 +8,10 @@
 }
 
 @layer base {
+  html, body, #root {
+    @apply h-screen;
+  }
+
   body {
     @apply bg-slate-50 text-slate-900;
   }

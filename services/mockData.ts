@@ -11,7 +11,7 @@ export const mockPortalData: PortalFolder = {
       subfolders: [
         {
           id: 'root.apps.payroll',
-          name: 'Payroll & Employement',
+          name: 'Payroll',
           subfolders: [],
           applications: [
             {
@@ -32,7 +32,7 @@ export const mockPortalData: PortalFolder = {
         },
         {
           id: 'root.apps.accounting',
-          name: 'Accounting and Controller',
+          name: 'Accounting',
           subfolders: [],
           applications: [
             {
@@ -58,7 +58,7 @@ export const mockPortalData: PortalFolder = {
         },
         {
           id: 'root.apps.admin',
-          name: 'Admin and backoffice',
+          name: 'Admin',
           subfolders: [],
           applications: [
             {
@@ -129,5 +129,6 @@ export const mockPortalData: PortalFolder = {
           ]
     }
     
-  ]
+  ],
+  applications: []
 };

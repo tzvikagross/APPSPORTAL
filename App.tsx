@@ -8,6 +8,7 @@ import { FolderIcon, AppIcon, ChevronRight, SearchIcon, getCategoryConfig } from
 import logo from './assets/bdo_logo.png';
 
 const App: React.FC = () => {
+  console.log("App rendering", {mockPortalData});
   const [currentFolder, setCurrentFolder] = useState<PortalFolder>(mockPortalData);
   const [path, setPath] = useState<BreadcrumbItem[]>([{ id: 'root', name: 'FSO PORTAL' }]);
   const [searchQuery, setSearchQuery] = useState('');
@@ -65,8 +66,29 @@ const App: React.FC = () => {
     return results;
   }, [searchQuery, currentFolder]);
 
+  // helper to download a file via fetch, avoiding navigation
+  const handleAppClick = (e: React.MouseEvent<HTMLAnchorElement>, app: PortalApp) => {
+    const isLocalAsset = app.link.startsWith('/assets/');
+    if (isLocalAsset) {
+      e.preventDefault();
+      fetch(app.link)
+        .then(res => res.blob())
+        .then(blob => {
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = app.link.split('/').pop() || '';
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          URL.revokeObjectURL(url);
+        })
+        .catch(console.error);
+    }
+  };
+
   return (
-    <div className="flex flex-col h-full bg-slate-50">
+    <div className="flex flex-col min-h-screen bg-slate-50">
       {/* Header */}
       <header className="bg-white border-b border-slate-200 px-6 py-4 flex flex-col md:flex-row md:items-center justify-between gap-4 sticky top-0 z-20">
         <div className="flex items-center gap-3">
@@ -160,12 +182,15 @@ const App: React.FC = () => {
           {filteredApps.length > 0 ? (
             filteredApps.map((app) => {
               const config = getCategoryConfig(app.category);
+              const isLocalAsset = app.link.startsWith('/assets/');
               return (
                 <a
                   key={app.id}
                   href={app.link}
                   target="_blank"
                   rel="noopener noreferrer"
+                  {...(isLocalAsset ? { download: true } : {})}
+                  onClick={(e) => handleAppClick(e, app)}
                   className="group block relative bg-white border border-slate-200 rounded-[2rem] p-8 hover:border-bdo-red/40 hover:shadow-2xl hover:shadow-bdo-red/10 transition-all duration-300 transform hover:-translate-y-1"
                 >
                   <div className="flex items-start justify-between mb-6">
