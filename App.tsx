@@ -4,6 +4,9 @@ import { PortalFolder, PortalApp, BreadcrumbItem } from './types';
 import { mockPortalData } from './services/mockData';
 import { FolderIcon, AppIcon, ChevronRight, SearchIcon, getCategoryConfig } from './components/Icon';
 
+// static asset import (handled by Vite)
+import logo from './assets/bdo_logo.png';
+
 const App: React.FC = () => {
   const [currentFolder, setCurrentFolder] = useState<PortalFolder>(mockPortalData);
   const [path, setPath] = useState<BreadcrumbItem[]>([{ id: 'root', name: 'Home' }]);
@@ -69,7 +72,7 @@ const App: React.FC = () => {
         <div className="flex items-center gap-3">
           <div className="flex items-center">
             <img 
-              src="https://www.bdo.global/BDO/media/BDO/BDO_logo.svg" 
+              src={logo} 
               alt="BDO Logo" 
               className="h-8 md:h-10 w-auto"
               referrerPolicy="no-referrer"
