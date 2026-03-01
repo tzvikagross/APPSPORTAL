@@ -15,24 +15,24 @@ export const mockPortalData: PortalFolder = {
           subfolders: [],
           applications: [
             {
-              id: 'payrol.python',
+              id: 'payrol.control',
               name: 'בקרת שכר',
               description: 'קובץ אקסל לבקרת שכר',
               link: '/assets/PayrollItemsControll.xlsx',
-              category: 'Finance'
+              category: 'Payroll'
             },
             {
-              id: 'app2',
-              name: 'Benify',
-              description: 'Explore and enroll in employee benefits programs.',
+              id: 'payrol.G2N',
+              name: 'G2N Generator',
+              description: 'הכנה של קובץ G2N',
               link: 'https://benify.com',
-              category: 'Insurance'
+              category: 'Payroll'
             }
           ]
         },
         {
-          id: 'f1-2',
-          name: 'Recruitment',
+          id: 'root.apps.accounting',
+          name: 'Accounting and Controller',
           subfolders: [],
           applications: [
             {
@@ -40,7 +40,7 @@ export const mockPortalData: PortalFolder = {
               name: 'Greenhouse',
               description: 'Applicant tracking system and hiring pipeline.',
               link: 'https://greenhouse.io',
-              category: 'Talent'
+              category: 'accounting'
             }
           ]
         }

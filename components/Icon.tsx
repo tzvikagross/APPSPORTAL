@@ -28,11 +28,11 @@ export const SearchIcon = ({ className }: { className?: string }) => (
 export const getCategoryConfig = (category: string) => {
   const c = category.toLowerCase();
   switch (c) {
-    case 'finance':
+    case 'payroll':
       return { color: 'text-emerald-600', bg: 'bg-emerald-50', hoverBg: 'group-hover:bg-emerald-600', badge: 'bg-emerald-100 text-emerald-700' };
-    case 'insurance':
+    case 'accounting':
       return { color: 'text-teal-600', bg: 'bg-teal-50', hoverBg: 'group-hover:bg-teal-600', badge: 'bg-teal-100 text-teal-700' };
-    case 'talent':
+    case 'funds':
       return { color: 'text-orange-600', bg: 'bg-orange-50', hoverBg: 'group-hover:bg-orange-600', badge: 'bg-orange-100 text-orange-700' };
     case 'documentation':
     case 'knowledge':
