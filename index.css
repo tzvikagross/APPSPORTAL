@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bdo-red: #E30613;
+  --color-bdo-dark: #333333;
+  --color-bdo-light: #F2F2F2;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900;
+  }
+}
