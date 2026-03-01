@@ -9,7 +9,7 @@ import logo from './assets/bdo_logo.png';
 
 const App: React.FC = () => {
   const [currentFolder, setCurrentFolder] = useState<PortalFolder>(mockPortalData);
-  const [path, setPath] = useState<BreadcrumbItem[]>([{ id: 'root', name: 'Home' }]);
+  const [path, setPath] = useState<BreadcrumbItem[]>([{ id: 'root', name: 'FSO PORTAL' }]);
   const [searchQuery, setSearchQuery] = useState('');
 
   // Helper to find a folder by ID in the tree
@@ -215,7 +215,7 @@ const App: React.FC = () => {
       {/* Footer / Info */}
       <footer className="bg-white border-t border-slate-200 px-8 py-4 text-center">
         <p className="text-xs text-slate-400 font-medium">
-          &copy; 2024 BDO FSO APPS PORTAL &bull; Enterprise Application Gateway &bull; <span className="text-bdo-red">Powered by Gemini AI</span>
+          &copy;  BDO FSO APPS PORTAL &bull; Enterprise Applications &bull; <span className="text-bdo-red">Created by Tzvika Gros</span>
         </p>
       </footer>
     </div>

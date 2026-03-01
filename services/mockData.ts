@@ -3,22 +3,22 @@ import { PortalFolder } from '../types';
 
 export const mockPortalData: PortalFolder = {
   id: 'root',
-  name: 'Home',
+  name: 'FSO PORTAL',
   subfolders: [
     {
-      id: 'f1',
-      name: 'Human Resources',
+      id: 'root.apps',
+      name: 'Applications',
       subfolders: [
         {
-          id: 'f1-1',
-          name: 'Payroll & Benefits',
+          id: 'root.apps.payroll',
+          name: 'Payroll & Employement',
           subfolders: [],
           applications: [
             {
-              id: 'app1',
-              name: 'Workday',
-              description: 'Manage personal profile, paystubs, and time off.',
-              link: 'https://workday.com',
+              id: 'payrol.python',
+              name: 'בקרת שכר',
+              description: 'קובץ אקסל לבקרת שכר',
+              link: '/assets/PayrollItemsControll.xlsx',
               category: 'Finance'
             },
             {
