@@ -36,11 +36,63 @@ export const mockPortalData: PortalFolder = {
           subfolders: [],
           applications: [
             {
-              id: 'app3',
-              name: 'Greenhouse',
-              description: 'Applicant tracking system and hiring pipeline.',
-              link: 'https://greenhouse.io',
-              category: 'accounting'
+              id: 'accounting.special',
+              name: 'Special Reports',
+              description: 'Manage Special Reports',
+              link: 'https://apps.powerapps.com/play/e/default-3c054339-d6c2-4bdc-b99e-4aeb43de91ec/a/193d7052-94b5-44aa-8160-cbc7e7391faa?tenantId=3c054339-d6c2-4bdc-b99e-4aeb43de91ec&hint=f70ced99-e6ec-46ce-a540-7af1467de7ab&sourcetime=1710230923529&source=portal',
+              category: 'Accounting'
+            },{
+              id: 'accounting.options',
+              name: 'SBC Amortization',
+              description: 'Calculate period amortization of SBC',
+              link: '/assets/Option amortization model.xlsm',
+              category: 'Accounting'
+            },{
+              id: 'accounting.invoice',
+              name: 'Priority Invoice Generation',
+              description: 'Invoice generation for Performance Energy',
+              link: '/assets/Priority Invoice XML generation.xlsm',
+              category: 'Accounting'
+            }
+          ]
+        },
+        {
+          id: 'root.apps.admin',
+          name: 'Admin and backoffice',
+          subfolders: [],
+          applications: [
+            {
+              id: 'admin.billing',
+              name: 'Monthly Billing',
+              description: 'Generate Monthly Invoices',
+              link: '/assets/invoice Generator.xlsm',
+              category: 'Admin'
+            },{
+              id: 'admin.proforma',
+              name: 'Proforma Invoice',
+              description: 'Show Clients Proforma Invoice',
+              link: 'bdonet/invoices/InvoicePrint.aspx?invoiceid=123456',
+              category: 'Admin'
+            }
+          ]
+        },
+        {
+          id: 'root.apps.fund',
+          name: 'Fund Administration Services',
+          subfolders: [],
+          applications: [
+            {
+              id: 'fund.BDO',
+              name: 'BDO Fund System',
+              description: 'BDO Fund System',
+              link: 'https://bdo-funds.co.il/funds',
+              category: 'Funds'
+            },{
+              id: 'fund.distribute',
+              name: 'Document Generator',
+              description: 'BDO Document Distribution System',
+              link: 'https://bdo-funds.co.il/funds',
+              category: 'Funds'
             }
           ]
         }

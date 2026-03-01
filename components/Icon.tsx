@@ -37,7 +37,7 @@ export const getCategoryConfig = (category: string) => {
     case 'documentation':
     case 'knowledge':
       return { color: 'text-slate-600', bg: 'bg-slate-50', hoverBg: 'group-hover:bg-slate-600', badge: 'bg-slate-100 text-slate-700' };
-    case 'monitoring':
+    case 'admin':
       return { color: 'text-rose-600', bg: 'bg-rose-50', hoverBg: 'group-hover:bg-rose-600', badge: 'bg-rose-100 text-rose-700' };
     case 'infrastructure':
       return { color: 'text-violet-600', bg: 'bg-violet-50', hoverBg: 'group-hover:bg-violet-600', badge: 'bg-violet-100 text-violet-700' };
